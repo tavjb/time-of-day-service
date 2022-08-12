@@ -6,6 +6,9 @@ spring:
     name: time-of-day-service
   config:
     import: optional:configserver:http://config-server:50000
+  cloud:
+    config:
+      fail-fast: true
 
 eureka:
   client:
